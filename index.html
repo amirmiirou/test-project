@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>page</title>
+
+<link href="./index.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    
+<!--
+<div  class="conteneur">
+
+
+
+<div class="sous-conteneur">
+
+
+<button class="moins">-</button>
+
+
+
+<div class="list">
+
+<h1  class="un">element 1</h1>
+<h1  class="deux" >element 2</h1>
+<h1  class="trois" >element 3</h1>
+
+
+
+</div>
+
+
+
+
+
+<button class="plus">+</button>
+
+
+
+
+</div>
+
+
+</div>
+
+    
+
+
+
+<script  >
+
+    localStorage.setItem('active','0');
+    document.getElementsByClassName('list')[0].children[1].setAttribute('style','display:none');
+    document.getElementsByClassName('list')[0].children[2].setAttribute('style','display:none'); 
+    
+    document.getElementsByClassName('list')[0].setAttribute('style','display:flex; justify-content:space-between; flex-grow:1');    
+    
+    
+    document.getElementsByClassName('un')[0].setAttribute('style','width:100% ; text-align:center')
+document.getElementsByClassName('plus')[0].addEventListener('click',(composant)=>{
+var w= Number.parseInt(localStorage.getItem('active'));
+if( w === 0 ){
+
+
+document.getElementsByClassName('list')[0].children[w].setAttribute('style','display:none');
+document.getElementsByClassName('list')[0].children[w+2].setAttribute('style','display:none');
+w=w+1
+
+document.getElementsByClassName('list')[0].children[w].setAttribute('style','display:flex; justify-content:space-between; flex-grow:1');
+localStorage.setItem('active',w);
+document.getElementsByClassName('deux')[0].setAttribute('style','width:100% ; text-align:center')
+}else if(w < document.getElementsByClassName('list')[0].children.length-1 ){
+
+  
+document.getElementsByClassName('list')[0].children[w].setAttribute('style','display:none');
+document.getElementsByClassName('list')[0].children[w-1].setAttribute('style','display:none');
+w=w+1;
+
+document.getElementsByClassName('list')[0].children[w].setAttribute('style','display:flex; justify-content:space-between; flex-grow:1');
+
+localStorage.setItem('active',w);
+
+document.getElementsByClassName('trois')[0].setAttribute('style','width:100% ; text-align:center')
+}else {
+
+
+document.getElementsByClassName('list')[0].children[w].setAttribute('style','display:none');
+document.getElementsByClassName('list')[0].children[w-1].setAttribute('style','display:none');
+w=w-2;
+document.getElementsByClassName('list')[0].children[w].setAttribute('style','display:flex; justify-content:space-between; flex-grow:1');
+localStorage.setItem('active',w);
+
+document.getElementsByClassName('un')[0].setAttribute('style','width:100% ; text-align:center')
+
+}
+
+
+
+
+    })
+
+
+
+    document.getElementsByClassName('moins')[0].addEventListener('click',()=>{
+
+
+
+
+
+})
+    
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+-->
+</body>
+
+</html>
